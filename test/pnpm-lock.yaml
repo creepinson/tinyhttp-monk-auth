@@ -1,18 +1,17 @@
 dependencies:
-  '@tinyhttp/app': 0.2.7
+  '@tinyhttp/app': 0.2.8
   '@tinyhttp/cors': 0.2.4
-  '@tinyhttp/jwt': 0.1.4
+  '@tinyhttp/jwt': 0.1.6
   '@tinyhttp/logger': 0.2.3
   '@types/body-parser': 1.19.0
   '@types/node': 14.0.23
   body-parser: 1.19.0
-  tinyhttp-monk-auth: 'link:../tinyhttp-auth'
 devDependencies:
   ts-node: 8.10.2_typescript@3.9.6
   typescript: 3.9.6
 lockfileVersion: 5.1
 packages:
-  /@tinyhttp/app/0.2.7:
+  /@tinyhttp/app/0.2.8:
     dependencies:
       '@tinyhttp/cookie': 0.1.3
       '@tinyhttp/cookie-signature': 0.1.3
@@ -28,7 +27,7 @@ packages:
     engines:
       node: '>=12.4.0'
     resolution:
-      integrity: sha512-HclRl3m0lre1hKeQczzI4bG3ptj5hJfw1si98CIH8mitgEjpeA28J0d7sUrKx6oL9FegWVTQOIlnoRhKiQwPhQ==
+      integrity: sha512-POfWA++OvXmWAimBucbz9GfzI/qSrT0yezS8TNnzxdbdtx1Ey7THxOxv6TkwEyNaaCEXQQdCIWscsne9lC4Z/g==
   /@tinyhttp/cookie-signature/0.1.3:
     dev: false
     engines:
@@ -55,12 +54,12 @@ packages:
       node: '>=12.4.0'
     resolution:
       integrity: sha512-+zTQALeL0v+8sXpG3Hrmz2qpVWUwku4QTnYmdcexbDuiMzc+oGKi+PwoMoFYi6WbCDPoJb/+N7hhTw8+3blFWQ==
-  /@tinyhttp/jwt/0.1.4:
+  /@tinyhttp/jwt/0.1.6:
     dependencies:
       jsonwebtoken: 8.5.1
     dev: false
     resolution:
-      integrity: sha512-NeIrDfJ4T+3IZXSsSUH4xpxMeot1kHvQTurhxqXb5GAQkcu3rfCooWo1xuEF9AgIzqfqrSLBu++6GVsfrfuuXA==
+      integrity: sha512-hjaMNliFGe0JLZ5XGvBLrzWexLqYhyRUkggcC8PKg8xZK5eqIqqRNvGkPWZxKttxOAzuiqnlC/bxWi7avhHHDQ==
   /@tinyhttp/logger/0.2.3:
     dependencies:
       colors: 1.4.0
@@ -470,13 +469,12 @@ packages:
     resolution:
       integrity: sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==
 specifiers:
-  '@tinyhttp/app': ^0.2.7
+  '@tinyhttp/app': ^0.2.8
   '@tinyhttp/cors': ^0.2.4
-  '@tinyhttp/jwt': ^0.1.4
+  '@tinyhttp/jwt': ^0.1.6
   '@tinyhttp/logger': ^0.2.3
   '@types/body-parser': ^1.19.0
   '@types/node': ^14.0.23
   body-parser: ^1.19.0
-  tinyhttp-monk-auth: 'link:/media/theoparis/Data1/Projects/Programming/tinyhttp-auth'
   ts-node: ^8.10.2
   typescript: ^3.9.6

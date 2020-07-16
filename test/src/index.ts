@@ -12,12 +12,12 @@ createConnection("mongodb://localhost/tinyhttp-test", {})
 		app.use(cors({}));
 		app.use(logger());
 		// app.use(jwt({ secret: config.secret!, algorithm: "HS256" }));
-/* 		app.use(bodyParser.json());
+		app.use(bodyParser.json());
 		app.use(
 			bodyParser.urlencoded({
 				extended: false,
 			}),
-		); */
+		);
 
 		app.get("/", async (_, res, next) => {
 			let file;
@@ -25,7 +25,7 @@ createConnection("mongodb://localhost/tinyhttp-test", {})
 			try {
 				file = await readFile(`${process.cwd()}/test.txt`);
 			} catch (error) {
-				res.status(500).send({error})
+				res.status(500).send({ error });
 			}
 			res.send(file?.toString());
 		});

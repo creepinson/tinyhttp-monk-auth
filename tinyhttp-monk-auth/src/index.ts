@@ -7,6 +7,7 @@ import { AuthenticationConfig, UserRequest } from "./types";
 export function isAsync(fn: any) {
 	return fn.constructor.name === "AsyncFunction";
 }
+
 /**
  * Creates a connection to the sepcified mongodb database and returns the authentication middleware.
  * @param dbUri The mongodb database URI to connect to.
@@ -71,6 +72,7 @@ export const useConnection = (db: IMonkManager, config: AuthenticationConfig) =>
 			const user = await findUser(req.body[config.usernameField!], req.body.password);
 			const result = await bcrypt.compare(req.body.password, user.password);
 			if (!result) throw new Error("Invalid credentials");
+			if (!user) throw new Error("User not found");
 			const token = await generateToken(user);
 			res.status(200).send({ user: userToJson(user), token });
 			return;
