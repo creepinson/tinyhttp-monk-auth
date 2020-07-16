@@ -1,0 +1,28 @@
+{
+	"name": "tinyhttp-monk-auth",
+	"version": "1.0.0",
+	"description": "auth middleware for tinyhttp that uses mongodb as a database",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"prepare": "pnpm run build",
+		"build": "tsc"
+	},
+	"author": "Theo Paris",
+	"license": "MIT",
+	"devDependencies": {
+		"typescript": "^3.9.6"
+	},
+	"dependencies": {
+		"@tinyhttp/app": "^0.2.7",
+		"@types/bcrypt": "^3.0.0",
+		"@types/jsonwebtoken": "^8.5.0",
+		"@types/node": "^14.0.23",
+		"bcrypt": "^5.0.0",
+		"jsonwebtoken": "^8.5.1",
+		"monk": "^7.3.0"
+	}
+}

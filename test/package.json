@@ -1,0 +1,24 @@
+{
+	"name": "tinyhttp-test",
+	"version": "1.0.0",
+	"description": "",
+	"main": "dist/index.js",
+	"scripts": {
+		"start": "ts-node src/index.ts"
+	},
+	"author": "Theo Paris",
+	"license": "MIT",
+	"dependencies": {
+		"@tinyhttp/app": "^0.2.7",
+		"@tinyhttp/cors": "^0.2.4",
+		"@tinyhttp/jwt": "^0.1.4",
+		"@tinyhttp/logger": "^0.2.3",
+		"@types/body-parser": "^1.19.0",
+		"@types/node": "^14.0.23",
+		"body-parser": "^1.19.0"
+	},
+	"devDependencies": {
+		"ts-node": "^8.10.2",
+		"typescript": "^3.9.6"
+	}
+}
